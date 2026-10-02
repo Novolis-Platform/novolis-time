@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Novolis.Time.Week</PackageId>
+    <RootNamespace>Novolis.Time.Week</RootNamespace>
+    <Description>ISO and culture-aware week boundaries for immutable time values.</Description>
+    <IsPackable>true</IsPackable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Novolis.Time\Novolis.Time.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Novolis.Time.Worktime.Legal</PackageId>
+    <RootNamespace>Novolis.Time.Worktime.Legal</RootNamespace>
+    <Description>Versioned legal-rule messages and worktime classifications.</Description>
+    <IsPackable>true</IsPackable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Novolis.Time.Worktime\Novolis.Time.Worktime.csproj" />
+  </ItemGroup>
+</Project>

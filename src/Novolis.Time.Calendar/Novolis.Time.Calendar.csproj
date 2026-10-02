@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Novolis.Time.Calendar</PackageId>
+    <RootNamespace>Novolis.Time.Calendar</RootNamespace>
+    <Description>Immutable workday calendars and business-day arithmetic.</Description>
+    <IsPackable>true</IsPackable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Novolis.Time\Novolis.Time.csproj" />
+  </ItemGroup>
+</Project>

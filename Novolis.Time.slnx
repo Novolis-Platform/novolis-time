@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Novolis.Time/Novolis.Time.csproj" />
+    <Project Path="src/Novolis.Time.Week/Novolis.Time.Week.csproj" />
+    <Project Path="src/Novolis.Time.Calendar/Novolis.Time.Calendar.csproj" />
+    <Project Path="src/Novolis.Time.Calendar.PublicHoliday/Novolis.Time.Calendar.PublicHoliday.csproj" />
+    <Project Path="src/Novolis.Time.Worktime/Novolis.Time.Worktime.csproj" />
+    <Project Path="src/Novolis.Time.Worktime.Legal/Novolis.Time.Worktime.Legal.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Novolis.Time.Worktime.FeatureTests/Novolis.Time.Worktime.FeatureTests.csproj" />
+  </Folder>
+</Solution>

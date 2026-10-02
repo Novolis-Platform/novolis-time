@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Novolis.Time.Worktime</PackageId>
+    <RootNamespace>Novolis.Time.Worktime</RootNamespace>
+    <Description>Immutable expected-versus-actual worktime records and flex projections.</Description>
+    <IsPackable>true</IsPackable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Novolis.Time\Novolis.Time.csproj" />
+    <ProjectReference Include="..\Novolis.Time.Calendar\Novolis.Time.Calendar.csproj" />
+  </ItemGroup>
+</Project>

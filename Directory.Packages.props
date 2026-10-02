@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageFloatingVersionsEnabled>true</CentralPackageFloatingVersionsEnabled>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="10.0.401" />
+    <PackageVersion Include="PublicHoliday" Version="3.16.0" />
+    <PackageVersion Include="TUnit" Version="1.72.4" />
+    <PackageVersion Include="Novolis.Testing.TUnit" Version="2026.1.*" />
+  </ItemGroup>
+</Project>

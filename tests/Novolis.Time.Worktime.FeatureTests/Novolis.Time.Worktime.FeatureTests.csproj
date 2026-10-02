@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Novolis.Time.Worktime.FeatureTests</RootNamespace>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="TUnit" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Novolis.Time\Novolis.Time.csproj" />
+    <ProjectReference Include="..\..\src\Novolis.Time.Week\Novolis.Time.Week.csproj" />
+    <ProjectReference Include="..\..\src\Novolis.Time.Calendar\Novolis.Time.Calendar.csproj" />
+    <ProjectReference Include="..\..\src\Novolis.Time.Calendar.PublicHoliday\Novolis.Time.Calendar.PublicHoliday.csproj" />
+    <ProjectReference Include="..\..\src\Novolis.Time.Worktime\Novolis.Time.Worktime.csproj" />
+    <ProjectReference Include="..\..\src\Novolis.Time.Worktime.Legal\Novolis.Time.Worktime.Legal.csproj" />
+  </ItemGroup>
+</Project>
