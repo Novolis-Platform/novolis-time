@@ -3,6 +3,8 @@
     <RootNamespace>Novolis.Time.Worktime.FeatureTests</RootNamespace>
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
+    <IsTestingPlatformApplication>true</IsTestingPlatformApplication>
+    <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
     <OutputType>Exe</OutputType>
   </PropertyGroup>
   <ItemGroup>
