@@ -1,1 +1,0 @@
-// TODO: Make this an interface etc. And place it in a Novolis.Time.Abstractions project!!!
