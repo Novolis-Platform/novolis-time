@@ -21,10 +21,15 @@ Requires .NET 10 (`net10.0`) and `Novolis.Time`. Restore from nuget.org + GitHub
 ```csharp
 using Novolis.Time.Calendar;
 
-var due = BusinessDayCalculator.AddBusinessDays(start, 5, calendar);
+var calendar = new WorkdayCalendar(
+    "weekdays",
+    new CalendarSourceMetadata("local", "1", "NO", null),
+    [DayOfWeek.Monday, DayOfWeek.Tuesday, DayOfWeek.Wednesday, DayOfWeek.Thursday, DayOfWeek.Friday],
+    []);
+var due = BusinessDayCalculator.AddBusinessDays(new DateOnly(2026, 10, 1), 5, calendar);
 ```
 
-`calendar` is an `IWorkdayCalendar`. Public holidays override the weekday pattern. This package does not load holiday data.
+Public holidays override the weekday pattern. This package does not load holiday data.
 
 ## Related packages
 
