@@ -5,7 +5,7 @@ namespace Novolis.Time.Worktime.Legal;
 /// <summary>Provides versioned starter presets that require source review before production activation.</summary>
 public static class WorktimeLegalPresets
 {
-    /// <summary>Gets the Norway private-agreement starter preset.</summary>
+    /// <summary>Gets the Norway private-agreement starter preset pending local legal and agreement review.</summary>
     public static WorktimeLegalPreset NorwayPrivate { get; } = Create(
         "norway.private.flex",
         "2026.1",
@@ -15,9 +15,9 @@ public static class WorktimeLegalPresets
         TimeSpan.FromHours(40),
         TimeSpan.FromHours(-10),
         "Overtime must have been agreed by the manager. The hours are retained and this caution is stored.",
-        LegalReviewState.Reviewed);
+        LegalReviewState.Draft);
 
-    /// <summary>Gets the Norway state handbook starter preset.</summary>
+    /// <summary>Gets the Norway state-handbook starter preset pending confirmation against the active agreement.</summary>
     public static WorktimeLegalPreset NorwayState { get; } = Create(
         "norway.state.flex",
         "2026.1",
@@ -27,7 +27,7 @@ public static class WorktimeLegalPresets
         TimeSpan.FromHours(50),
         TimeSpan.FromHours(-10),
         "Ordered overtime must be recorded separately. Unused positive flex normalizes from the saldo and is not a payment.",
-        LegalReviewState.Reviewed);
+        LegalReviewState.Draft);
 
     /// <summary>Gets a Belgium starter preset that requires local review.</summary>
     public static WorktimeLegalPreset Belgium { get; } = Create(

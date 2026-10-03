@@ -67,4 +67,18 @@ public sealed record WorktimeLegalPreset
 
     /// <summary>Gets the production-review state of the legal source material.</summary>
     public LegalReviewState ReviewState { get; }
+
+    /// <summary>Returns the same reviewed preset with a tenant-configured, auditable overtime-agreement message.</summary>
+    public WorktimeLegalPreset WithOvertimeAgreementMessage(string message) =>
+        new(
+            Id,
+            Version,
+            CountryCode,
+            Citation,
+            DailyOrdinaryLimit,
+            FlexCarryPolicy,
+            ApprovalSchedule,
+            RequiresManagerAgreementForFinancialCompensation,
+            message,
+            ReviewState);
 }
