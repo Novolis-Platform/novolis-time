@@ -1,0 +1,28 @@
+{
+  "packages": {
+    "Novolis.Time": {
+      "path": "src/Novolis.Time/Novolis.Time.csproj",
+      "description": "Local clock intervals and duration primitives"
+    },
+    "Novolis.Time.Week": {
+      "path": "src/Novolis.Time.Week/Novolis.Time.Week.csproj",
+      "description": "ISO week boundaries"
+    },
+    "Novolis.Time.Calendar": {
+      "path": "src/Novolis.Time.Calendar/Novolis.Time.Calendar.csproj",
+      "description": "Workday calendars and business-day arithmetic"
+    },
+    "Novolis.Time.Calendar.PublicHoliday": {
+      "path": "src/Novolis.Time.Calendar.PublicHoliday/Novolis.Time.Calendar.PublicHoliday.csproj",
+      "description": "Offline public-holiday workday calendars"
+    },
+    "Novolis.Time.Worktime": {
+      "path": "src/Novolis.Time.Worktime/Novolis.Time.Worktime.csproj",
+      "description": "Expected versus actual worktime and flex normalization"
+    },
+    "Novolis.Time.Worktime.Legal": {
+      "path": "src/Novolis.Time.Worktime.Legal/Novolis.Time.Worktime.Legal.csproj",
+      "description": "Versioned legal messages and worktime presets"
+    }
+  }
+}

@@ -2,7 +2,7 @@ using Novolis.Time;
 using Novolis.Time.Calendar.PublicHoliday;
 using Novolis.Time.Worktime;
 
-namespace Novolis.Time.Worktime.FeatureTests;
+namespace Novolis.Time.Unit;
 
 internal static class NorwayWorktimeFixture
 {

@@ -1,11 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <RootNamespace>Novolis.Time.Worktime.FeatureTests</RootNamespace>
-    <IsPackable>false</IsPackable>
-    <IsTestProject>true</IsTestProject>
-    <IsTestingPlatformApplication>true</IsTestingPlatformApplication>
-    <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
-    <OutputType>Exe</OutputType>
+    <RootNamespace>Novolis.Time.Unit</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="TUnit" />

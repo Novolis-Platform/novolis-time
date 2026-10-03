@@ -1,8 +1,10 @@
 <Project>
+  <Import Project="$(MSBuildThisFileDirectory)..\Directory.Build.props" />
   <PropertyGroup>
     <NoWarn>$(NoWarn);CS1591;CS1573;CS1574</NoWarn>
+    <PackageReadmeFile Condition="'$(PackageReadmeFile)' == '' and Exists('$(MSBuildProjectDirectory)\README.md')">README.md</PackageReadmeFile>
   </PropertyGroup>
-  <Import Project="$(MSBuildThisFileDirectory)..\Directory.Build.props" />
-  <Import Project="$(MSBuildThisFileDirectory)..\..\novolis-governance\build\Novolis.PackageReadme.props"
-          Condition="Exists('$(MSBuildThisFileDirectory)..\..\novolis-governance\build\Novolis.PackageReadme.props')" />
+  <ItemGroup Condition="'$(IsPackable)' == 'true' and Exists('$(MSBuildProjectDirectory)\README.md')">
+    <None Include="README.md" Pack="true" PackagePath="\" Condition="@(None->WithMetadataValue('Identity', 'README.md')->Count()) == 0" />
+  </ItemGroup>
 </Project>

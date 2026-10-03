@@ -1,19 +1,20 @@
+<!-- novolis-pkg-brand:start -->
+[![Novolis](https://raw.githubusercontent.com/Novolis-Platform/.github/main/brand/logo-icon.png)](https://novolis-platform.github.io/.github/novolis-time/)
+
+[Novolis](https://github.com/Novolis-Platform) · [Docs](https://novolis-platform.github.io/.github/novolis-time/) · [Source](https://github.com/Novolis-Platform/novolis-time)
+<!-- novolis-pkg-brand:end -->
+
 # Novolis.Time
 
-Immutable local clock intervals and duration primitives for Novolis products.
-
-`ClockInterval` represents a non-overnight local interval and provides deterministic duration and overlap arithmetic. The package has no calendar, legal-policy, storage, UI, payroll, or leave dependency.
-# Novolis.Time
-
-Immutable local clock intervals and duration primitives.
+Immutable local clock intervals and duration primitives. `ClockInterval` is a non-overnight local range with deterministic duration and overlap arithmetic. This package has no calendar, legal-policy, storage, UI, payroll, or leave dependency.
 
 ## Install
 
-```powershell
+```bash
 dotnet add package Novolis.Time
 ```
 
-Requires .NET 10.
+Requires .NET 10 (`net10.0`). Restore from nuget.org + GitHub Packages (`https://nuget.pkg.github.com/Novolis-Platform/index.json`).
 
 ## Quick start
 
@@ -25,3 +26,20 @@ var overlap = core.OverlapDuration(new ClockInterval(new TimeOnly(8, 0), new Tim
 ```
 
 An interval must end after it starts on the same local day. Overnight ranges are rejected.
+
+## Related packages
+
+| Package | When to use |
+|---------|-------------|
+| `Novolis.Time.Week` | Group dates into ISO weeks |
+| `Novolis.Time.Calendar` | Workdays and business-day arithmetic |
+| `Novolis.Time.Worktime` | Expected versus actual worktime |
+
+## More documentation
+
+- [Getting started](https://github.com/Novolis-Platform/novolis-time/blob/main/docs/getting-started.md)
+- [Design](https://github.com/Novolis-Platform/novolis-time/blob/main/docs/design.md)
+
+## Support
+
+Pre-release `2026.1.*` on GitHub Packages. Issues: [novolis-time](https://github.com/Novolis-Platform/novolis-time/issues).

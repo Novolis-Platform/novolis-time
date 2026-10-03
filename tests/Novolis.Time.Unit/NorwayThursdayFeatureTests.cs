@@ -2,7 +2,7 @@ using Novolis.Time;
 using Novolis.Time.Worktime;
 using Novolis.Time.Worktime.Legal;
 
-namespace Novolis.Time.Worktime.FeatureTests;
+namespace Novolis.Time.Unit;
 
 public sealed class NorwayThursdayFeatureTests
 {

@@ -8,6 +8,6 @@
     <Project Path="src/Novolis.Time.Worktime.Legal/Novolis.Time.Worktime.Legal.csproj" />
   </Folder>
   <Folder Name="/tests/">
-    <Project Path="tests/Novolis.Time.Worktime.FeatureTests/Novolis.Time.Worktime.FeatureTests.csproj" />
+    <Project Path="tests/Novolis.Time.Unit/Novolis.Time.Unit.csproj" />
   </Folder>
 </Solution>
