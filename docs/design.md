@@ -7,12 +7,13 @@
 ```text
 Novolis.Time
     ├── Novolis.Time.Week
+    ├── Novolis.Time.Month
     └── Novolis.Time.Workday
             └── Novolis.Time.Worktime
                     └── Novolis.Time.Worktime.Legal
 ```
 
-Holiday generation is a private tool (`tools/GeneratePublicHolidays`). It may reference the third-party `PublicHoliday` package. Runtime assemblies consume only the frozen catalog embedded in `Novolis.Time.Workday`.
+Holiday generation is a private tool (`tools/GeneratePublicHolidays`). It may reference the third-party `PublicHoliday` package and `Novolis.CodeGen.Reflection.Dump`. Runtime assemblies consume only the C# calendar baselines committed in `Novolis.Time.Workday`. Those baselines are defaults: sparse configuration overrides one date and leaves the rest.
 
 ## Packages
 
@@ -20,9 +21,10 @@ Holiday generation is a private tool (`tools/GeneratePublicHolidays`). It may re
 | --- | --- |
 | `Novolis.Time` | `ClockInterval`: same-day local ranges, duration, containment, and overlap |
 | `Novolis.Time.Week` | `WeekModel`, `WeekKey`, `WeekRange`, `WeeklyPattern<T>`, `WeekCycle<T>`, `WeekBasedCalendar<T>` |
-| `Novolis.Time.Workday` | `IWorkdayCalendar`, `WorkdayCalendar`, `BusinessDayCalculator`, frozen public-holiday facts |
+| `Novolis.Time.Month` | `MonthModel`, `MonthKey`, `MonthRange`, `MonthlyPattern<T>`, `MonthCycle<T>`, `MonthBasedCalendar<T>` |
+| `Novolis.Time.Workday` | `Calendar`, `IWorkdayCalendar`, `WorkdayCalendar`, `BusinessDayCalculator`, in-code holiday baselines |
 | `Novolis.Time.Worktime` | Expected snapshots, actual records, day balance, and flex normalization |
-| `Novolis.Time.Worktime.Legal` | Versioned rule messages and starter presets that remain draft until a local review |
+| `Novolis.Time.Worktime.Legal` | Versioned rule messages. The adopting product supplies its own presets |
 
 Workday and worktime public APIs see only `IWorkdayCalendar`. They are not a general calendar.
 
@@ -32,7 +34,7 @@ Workday and worktime public APIs see only `IWorkdayCalendar`. They are not a gen
 - Workday decisions that keep source metadata (data set, version, country)
 - Week-based schedules whose missing days are silence, not a reset
 - Worktime math that separates expected time, actual time, flex, and financial-compensation duration
-- Legal presets that stay in `LegalReviewState.Draft` until the adopting organisation marks them reviewed
+- Legal values that stay in `LegalReviewState.Draft` until the adopting organisation marks them reviewed
 
 ## Non-goals
 
@@ -40,9 +42,9 @@ Workday and worktime public APIs see only `IWorkdayCalendar`. They are not a gen
 - Overnight clock intervals
 - Calling a holiday web service or the third-party holiday library at runtime
 - Treating a draft legal preset as permission to enforce a rule
+- Shipping a product's workplace, agreement, or country preset catalog
 - UI, storage, or Avalonia types
-- Hours `DayShape` stacking (that stays in Novolis Hours)
 
 ## Consumers
 
-Products such as Novolis Hours compose these packages at the app layer. They own persistence, identity, and any payment rules.
+Products compose these packages at the app layer. They own persistence, identity, workplace presets, and any payment rules. A generated calendar is a baseline they can override date by date.

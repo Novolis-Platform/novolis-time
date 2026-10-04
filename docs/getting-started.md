@@ -14,7 +14,7 @@ dotnet add package Novolis.Time.Workday
 dotnet add package Novolis.Time.Worktime
 ```
 
-Add `Novolis.Time.Week` for week-based calendars, and `Novolis.Time.Worktime.Legal` only when a product needs the draft presets.
+Add `Novolis.Time.Week` for week-based calendars and `Novolis.Time.Month` for month identity and month arithmetic. Add `Novolis.Time.Worktime.Legal` when a product supplies its own legal preset values.
 
 ## Clock interval
 
@@ -27,6 +27,17 @@ var overlap = core.OverlapDuration(new ClockInterval(new TimeOnly(8, 0), new Tim
 
 An interval must end after it starts on the same local day. Overnight ranges are rejected.
 
+## Months
+
+```csharp
+using Novolis.Time.Month;
+
+var october = MonthRange.From(MonthKey.FromGregorian(new DateOnly(2026, 10, 4)));
+var clamped = MonthModel.Gregorian.AddMonths(new DateOnly(2026, 1, 31), 1);
+```
+
+`october` is 1 October through 31 October. `clamped` is 28 February 2026, because that month has no day 31. A missing day in a `MonthlyPattern<T>` is silence.
+
 ## Workdays
 
 ```csharp
@@ -37,10 +48,22 @@ var constitutionDay = calendar.IsWorkday(new DateOnly(2026, 5, 17));
 var due = BusinessDayCalculator.AddBusinessDays(new DateOnly(2026, 5, 15), 1, calendar);
 ```
 
-Public holidays are frozen facts embedded in `Novolis.Time.Workday`. Regenerate them with:
+Public holidays are in-code baselines in `Novolis.Time.Workday`. Sparse configuration overrides one date:
+
+```csharp
+using Novolis.Time.Workday;
+
+var calendar = WorkdayCalendar.FromGeneratedHolidays(
+    "no-workdays-2026",
+    "NO",
+    2026,
+    configuration: [new CalendarOverride(new DateOnly(2026, 5, 1), null)]);
+```
+
+Regenerate the baselines for this year and the next five:
 
 ```powershell
-dotnet run --project d:\novolis\novolis-time\tools\GeneratePublicHolidays\GeneratePublicHolidays.csproj -- d:\novolis\novolis-time\src\Novolis.Time.Workday\GeneratedHolidays.json
+dotnet run --project d:\novolis\novolis-time\tools\GeneratePublicHolidays\GeneratePublicHolidays.csproj -- d:\novolis\novolis-time\src\Novolis.Time.Workday\Calendars
 ```
 
 ## Expected versus actual

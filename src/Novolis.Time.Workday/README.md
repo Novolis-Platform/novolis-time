@@ -8,9 +8,9 @@
 
 Immutable workday calendars and business-day arithmetic. A workday calendar answers whether a date is a workday and why a non-workday is excluded, and it keeps source metadata so an application can retain the calendar version behind a decision.
 
-This is not a general calendar API. It does not own weekly patterns, Hours `DayShape` stacking, pay, or leave.
+This is not a general calendar API. It does not own weekly or monthly patterns, pay, or leave.
 
-Public holidays come from frozen generated facts embedded in this package. Runtime code does not call the third-party holiday library.
+Public holidays are in-code baseline collections for the selected locations, covering the generation year and the next five years. Runtime code does not call the third-party holiday library. Sparse `CalendarOverride` configuration replaces or clears one date and leaves the other baseline rules in place.
 
 ## Install
 
@@ -29,10 +29,10 @@ var calendar = WorkdayCalendar.FromGeneratedHolidays("no-workdays-2026", "NO", 2
 var due = BusinessDayCalculator.AddBusinessDays(new DateOnly(2026, 10, 1), 5, calendar);
 ```
 
-Regenerate the embedded catalog from the repository root of novolis-time:
+Regenerate the in-code baselines:
 
 ```powershell
-dotnet run --project d:\novolis\novolis-time\tools\GeneratePublicHolidays\GeneratePublicHolidays.csproj
+dotnet run --project d:\novolis\novolis-time\tools\GeneratePublicHolidays\GeneratePublicHolidays.csproj -- d:\novolis\novolis-time\src\Novolis.Time.Workday\Calendars
 ```
 
 ## Related packages
@@ -40,6 +40,7 @@ dotnet run --project d:\novolis\novolis-time\tools\GeneratePublicHolidays\Genera
 | Package | When to use |
 |---------|-------------|
 | `Novolis.Time.Week` | Week identity, weekly patterns, and rotating cycles |
+| `Novolis.Time.Month` | Month identity, monthly patterns, and month arithmetic |
 | `Novolis.Time.Worktime` | Apply a workday calendar to expected worktime |
 | `Novolis.Time` | Clock intervals inside a workday |
 

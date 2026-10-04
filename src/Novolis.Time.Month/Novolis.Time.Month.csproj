@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Novolis.Time.Month</PackageId>
+    <RootNamespace>Novolis.Time.Month</RootNamespace>
+    <Description>Gregorian month identity and month-based calendars.</Description>
+    <IsPackable>true</IsPackable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Novolis.Time\Novolis.Time.csproj" />
+  </ItemGroup>
+</Project>

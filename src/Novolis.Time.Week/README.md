@@ -6,7 +6,7 @@
 
 # Novolis.Time.Week
 
-Week identity and week-based calendars. Use this package to number weeks, describe repeating weekday patterns, rotate multi-week cycles, and apply dated exceptions. It does not own holidays, pay, leave, or Hours `DayShape` stacking.
+Week identity and week-based calendars. Use this package to number weeks, describe repeating weekday patterns, rotate multi-week cycles, and apply dated exceptions. It does not own holidays, pay, or leave.
 
 ISO week numbers delegate to `System.Globalization.ISOWeek`. Culture-specific weeks are snapshots (`WeekModel.FromSnapshot`); they never read `CultureInfo.CurrentCulture`.
 

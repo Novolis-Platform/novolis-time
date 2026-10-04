@@ -1,6 +1,5 @@
 using Novolis.Time.Workday;
 using Novolis.Time.Worktime;
-using Novolis.Time.Worktime.Legal;
 
 namespace Novolis.Time.Unit;
 
@@ -32,7 +31,7 @@ public sealed class CalendarAndSettlementFeatureTests
     public async Task Normalizes_unused_positive_flex_without_financial_compensation()
     {
         var normalization = FlexNormalization.Create(
-            WorktimeLegalPresets.NorwayPrivate.FlexCarryPolicy,
+            new FlexCarryPolicy("carry", TimeSpan.FromHours(40), TimeSpan.FromHours(-10)),
             TimeSpan.FromHours(55));
 
         await Assert.That(normalization.NormalizedUnusedFlex).IsEqualTo(TimeSpan.FromHours(15));
@@ -44,7 +43,7 @@ public sealed class CalendarAndSettlementFeatureTests
     public async Task Keeps_state_handbook_normalization_separate_from_payment()
     {
         var normalization = FlexNormalization.Create(
-            WorktimeLegalPresets.NorwayState.FlexCarryPolicy,
+            new FlexCarryPolicy("carry-tighter", TimeSpan.FromHours(50), TimeSpan.FromHours(-10)),
             TimeSpan.FromHours(55));
 
         await Assert.That(normalization.NormalizedUnusedFlex).IsEqualTo(TimeSpan.FromHours(5));

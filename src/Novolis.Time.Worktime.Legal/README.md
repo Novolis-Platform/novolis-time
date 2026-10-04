@@ -6,7 +6,7 @@
 
 # Novolis.Time.Worktime.Legal
 
-Versioned legal messages and starter worktime presets. Evaluators return classifications and messages rather than rejecting recorded work. Every included preset remains draft until current local law and the collective agreement have been reviewed and approved by the adopting organisation.
+Versioned legal messages for worktime values. Evaluators return classifications and messages rather than rejecting recorded work. The adopting product supplies preset values. A preset remains draft until that organisation reviews the local source and marks it approved.
 
 ## Install
 
@@ -19,13 +19,23 @@ Requires .NET 10 (`net10.0`) and `Novolis.Time.Worktime`. Restore from nuget.org
 ## Quick start
 
 ```csharp
+using Novolis.Time.Worktime;
 using Novolis.Time.Worktime.Legal;
 
-var preset = WorktimeLegalPresets.NorwayPrivate;
-var draft = preset.ReviewState == LegalReviewState.Draft;
+var preset = new WorktimeLegalPreset(
+    "local.agreement",
+    "2026.1",
+    "NO",
+    "Local agreement",
+    TimeSpan.FromHours(9),
+    new FlexCarryPolicy("local.agreement", TimeSpan.FromHours(40), TimeSpan.FromHours(-10)),
+    new ApprovalSchedule(5, 5, 10),
+    true,
+    "Manager agreement is recorded with the day.",
+    LegalReviewState.Draft);
 ```
 
-A draft preset can explain a rule. It is not an approval to apply that rule in production.
+The caller supplies the preset. A draft preset can explain a rule. It is not an approval to apply that rule in production.
 
 ## Related packages
 

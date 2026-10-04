@@ -1,6 +1,7 @@
 using Novolis.Time;
 using Novolis.Time.Workday;
 using Novolis.Time.Worktime;
+using Novolis.Time.Worktime.Legal;
 
 namespace Novolis.Time.Unit;
 
@@ -34,6 +35,24 @@ internal static class NorwayWorktimeFixture
 
         return new EmploymentSettings("employee-1", profile, calendar, template, 1m);
     }
+
+    internal static WorktimeLegalPreset CreateDraftPreset(
+        TimeSpan? positiveCarryCap = null,
+        TimeSpan? negativeCarryFloor = null) =>
+        new(
+            "draft.local",
+            "test",
+            "NO",
+            "Local test citation",
+            TimeSpan.FromHours(9),
+            new FlexCarryPolicy(
+                "draft.local",
+                positiveCarryCap ?? TimeSpan.FromHours(40),
+                negativeCarryFloor ?? TimeSpan.FromHours(-10)),
+            new ApprovalSchedule(5, 5, 10),
+            true,
+            "The agreement is a stored caution.",
+            LegalReviewState.Draft);
 
     internal static ActualWorkRecord CreateThursdayRecord(
         IEnumerable<FinancialCompensationMark>? compensationMarks = null,

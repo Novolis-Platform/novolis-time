@@ -2,6 +2,7 @@
   <Folder Name="/src/">
     <Project Path="src/Novolis.Time/Novolis.Time.csproj" />
     <Project Path="src/Novolis.Time.Week/Novolis.Time.Week.csproj" />
+    <Project Path="src/Novolis.Time.Month/Novolis.Time.Month.csproj" />
     <Project Path="src/Novolis.Time.Workday/Novolis.Time.Workday.csproj" />
     <Project Path="src/Novolis.Time.Worktime/Novolis.Time.Worktime.csproj" />
     <Project Path="src/Novolis.Time.Worktime.Legal/Novolis.Time.Worktime.Legal.csproj" />

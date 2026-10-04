@@ -1,14 +1,11 @@
-using System.Reflection;
-using System.Text.Json;
-
 namespace Novolis.Time.Workday;
 
-/// <summary>Loads the frozen public-holiday catalog embedded in this assembly.</summary>
+/// <summary>Loads the in-code public-holiday baselines for the selected locations.</summary>
 public static class GeneratedHolidayCatalog
 {
     private static readonly Lazy<GeneratedHolidayDocument> catalog = new(Load);
 
-    /// <summary>Gets the embedded catalog.</summary>
+    /// <summary>Gets the baseline catalog.</summary>
     public static GeneratedHolidayDocument Current => catalog.Value;
 
     /// <summary>Returns generated holidays for one country and year.</summary>
@@ -16,44 +13,53 @@ public static class GeneratedHolidayCatalog
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(countryCode);
         var country = countryCode.ToUpperInvariant();
-        if (!Current.Countries.TryGetValue(country, out var years) ||
-            !years.TryGetValue(year.ToString(), out var holidays))
+        if (year < CalendarCatalog.FirstYear || year > CalendarCatalog.LastYear)
         {
             throw new InvalidOperationException(
-                $"No generated public holidays exist for {country} {year}. Regenerate with the private GeneratePublicHolidays tool.");
+                $"No generated public holidays exist for {country} {year}. The baseline covers {CalendarCatalog.FirstYear} through {CalendarCatalog.LastYear}.");
         }
 
-        return holidays;
+        return CalendarCatalog.GetBaseline(country)
+            .Where(holiday => holiday.Date.Year == year)
+            .ToArray();
     }
 
     /// <summary>Returns every generated year for a country.</summary>
     public static IReadOnlyList<int> GetYears(string countryCode)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(countryCode);
-        var country = countryCode.ToUpperInvariant();
-        if (!Current.Countries.TryGetValue(country, out var years))
-        {
-            throw new InvalidOperationException(
-                $"No generated public holidays exist for {country}. Regenerate with the private GeneratePublicHolidays tool.");
-        }
-
-        return years.Keys
-            .Select(int.Parse)
-            .OrderBy(year => year)
+        _ = CalendarCatalog.GetBaseline(countryCode.ToUpperInvariant());
+        return Enumerable.Range(
+                CalendarCatalog.FirstYear,
+                CalendarCatalog.LastYear - CalendarCatalog.FirstYear + 1)
             .ToArray();
     }
 
     private static GeneratedHolidayDocument Load()
     {
-        var assembly = typeof(GeneratedHolidayCatalog).Assembly;
-        using var stream = assembly.GetManifestResourceStream("Novolis.Time.Workday.GeneratedHolidays.json")
-            ?? throw new InvalidOperationException("The generated holiday catalog is missing from Novolis.Time.Workday.");
-        return JsonSerializer.Deserialize<GeneratedHolidayDocument>(stream, JsonOptions)
-            ?? throw new InvalidOperationException("The generated holiday catalog could not be read.");
-    }
+        var countries = new Dictionary<string, Dictionary<string, List<PublicHolidayFact>>>(StringComparer.Ordinal);
+        foreach (var country in CalendarCatalog.CountryCodes)
+        {
+            var byYear = CalendarCatalog.GetBaseline(country)
+                .GroupBy(holiday => holiday.Date.Year)
+                .ToDictionary(
+                    group => group.Key.ToString(),
+                    group => group.ToList(),
+                    StringComparer.Ordinal);
+            for (var year = CalendarCatalog.FirstYear; year <= CalendarCatalog.LastYear; year++)
+            {
+                byYear.TryAdd(year.ToString(), []);
+            }
 
-    private static JsonSerializerOptions JsonOptions { get; } = new()
-    {
-        PropertyNameCaseInsensitive = true,
-    };
+            countries[country] = byYear;
+        }
+
+        return new GeneratedHolidayDocument
+        {
+            SourcePackage = GeneratedCalendarSource.Package,
+            SourcePackageVersion = GeneratedCalendarSource.PackageVersion,
+            GeneratorVersion = GeneratedCalendarSource.GeneratorVersion,
+            Countries = countries,
+        };
+    }
 }

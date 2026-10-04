@@ -1,6 +1,6 @@
 namespace Novolis.Time.Workday;
 
-/// <summary>Embedded holiday catalog emitted by the private generator.</summary>
+/// <summary>Holiday catalog assembled from the in-code calendar baselines.</summary>
 public sealed class GeneratedHolidayDocument
 {
     /// <summary>Gets the source package identity recorded at generation.</summary>

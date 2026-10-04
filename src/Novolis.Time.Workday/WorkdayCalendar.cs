@@ -54,15 +54,21 @@ public sealed class WorkdayCalendar : IWorkdayCalendar
         string id,
         string countryCode,
         int year,
-        IEnumerable<DayOfWeek>? workdays = null) =>
-        FromGeneratedHolidays(id, countryCode, [year], workdays);
+        IEnumerable<DayOfWeek>? workdays = null,
+        IEnumerable<CalendarOverride>? configuration = null) =>
+        FromGeneratedHolidays(id, countryCode, [year], workdays, configuration);
 
     /// <summary>Builds a calendar from frozen generated holidays for selected years.</summary>
+    /// <remarks>
+    /// Generated facts are the baseline. <paramref name="configuration"/> overrides individual dates
+    /// and leaves every other baseline rule in place.
+    /// </remarks>
     public static WorkdayCalendar FromGeneratedHolidays(
         string id,
         string countryCode,
         IEnumerable<int> years,
-        IEnumerable<DayOfWeek>? workdays = null)
+        IEnumerable<DayOfWeek>? workdays = null,
+        IEnumerable<CalendarOverride>? configuration = null)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(id);
         ArgumentException.ThrowIfNullOrWhiteSpace(countryCode);
@@ -77,6 +83,7 @@ public sealed class WorkdayCalendar : IWorkdayCalendar
         var holidays = selectedYears
             .SelectMany(year => GeneratedHolidayCatalog.GetHolidays(countryCode, year))
             .ToArray();
+        var calendar = new Calendar(id, countryCode, holidays, configuration);
         var catalog = GeneratedHolidayCatalog.Current;
         return new WorkdayCalendar(
             id,
@@ -86,7 +93,7 @@ public sealed class WorkdayCalendar : IWorkdayCalendar
                 countryCode.ToUpperInvariant(),
                 null),
             workdays ?? DefaultWorkdays,
-            holidays);
+            calendar.EffectiveHolidays());
     }
 
     /// <summary>Builds a calendar from every generated year for a country.</summary>

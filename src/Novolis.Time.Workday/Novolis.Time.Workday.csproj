@@ -8,6 +8,5 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Novolis.Time\Novolis.Time.csproj" />
-    <EmbeddedResource Include="GeneratedHolidays.json" LogicalName="Novolis.Time.Workday.GeneratedHolidays.json" />
   </ItemGroup>
 </Project>

@@ -15,7 +15,7 @@ public sealed class NorwayThursdayFeatureTests
         var record = NorwayWorktimeFixture.CreateThursdayRecord();
 
         var balance = WorktimeCalculator.Calculate(record, expected);
-        var firings = WorktimeLegalEvaluator.Evaluate(record, balance, profile, WorktimeLegalPresets.NorwayPrivate);
+        var firings = WorktimeLegalEvaluator.Evaluate(record, balance, profile, NorwayWorktimeFixture.CreateDraftPreset());
 
         await Assert.That(expected.IsWorkday).IsTrue();
         await Assert.That(expected.ExpectedDuration).IsEqualTo(TimeSpan.FromHours(7.5));
@@ -58,7 +58,7 @@ public sealed class NorwayThursdayFeatureTests
             ]);
 
         var balance = WorktimeCalculator.Calculate(record, expected);
-        var firings = WorktimeLegalEvaluator.Evaluate(record, balance, settings.Profile, WorktimeLegalPresets.NorwayPrivate);
+        var firings = WorktimeLegalEvaluator.Evaluate(record, balance, settings.Profile, NorwayWorktimeFixture.CreateDraftPreset());
 
         await Assert.That(balance.Actual).IsEqualTo(TimeSpan.FromHours(11.75));
         await Assert.That(firings.Select(firing => firing.RuleId))

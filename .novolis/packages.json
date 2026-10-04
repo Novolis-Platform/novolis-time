@@ -8,6 +8,10 @@
       "path": "src/Novolis.Time.Week/Novolis.Time.Week.csproj",
       "description": "Week identity and week-based calendars"
     },
+    "Novolis.Time.Month": {
+      "path": "src/Novolis.Time.Month/Novolis.Time.Month.csproj",
+      "description": "Month identity and month-based calendars"
+    },
     "Novolis.Time.Workday": {
       "path": "src/Novolis.Time.Workday/Novolis.Time.Workday.csproj",
       "description": "Workday calendars and business-day arithmetic"
@@ -18,7 +22,7 @@
     },
     "Novolis.Time.Worktime.Legal": {
       "path": "src/Novolis.Time.Worktime.Legal/Novolis.Time.Worktime.Legal.csproj",
-      "description": "Versioned legal messages and worktime presets"
+      "description": "Versioned legal-rule messages"
     }
   }
 }
