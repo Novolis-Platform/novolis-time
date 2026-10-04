@@ -31,8 +31,8 @@ An interval must end after it starts on the same local day. Overnight ranges are
 
 | Package | When to use |
 |---------|-------------|
-| `Novolis.Time.Week` | Group dates into ISO weeks |
-| `Novolis.Time.Calendar` | Workdays and business-day arithmetic |
+| `Novolis.Time.Week` | Week identity and week-based calendars |
+| `Novolis.Time.Workday` | Workdays and business-day arithmetic |
 | `Novolis.Time.Worktime` | Expected versus actual worktime |
 
 ## More documentation

@@ -1,4 +1,4 @@
-namespace Novolis.Time.Calendar;
+namespace Novolis.Time.Workday;
 
 /// <summary>Calculates dates using an immutable workday calendar.</summary>
 public static class BusinessDayCalculator

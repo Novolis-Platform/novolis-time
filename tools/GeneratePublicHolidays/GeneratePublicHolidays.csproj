@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>GeneratePublicHolidays</RootNamespace>
+    <IsPackable>false</IsPackable>
+    <NovolisStackAnalyzers>false</NovolisStackAnalyzers>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="PublicHoliday" />
+  </ItemGroup>
+</Project>

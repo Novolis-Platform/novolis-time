@@ -10,11 +10,11 @@
 
 ```bash
 dotnet add package Novolis.Time
-dotnet add package Novolis.Time.Calendar.PublicHoliday
+dotnet add package Novolis.Time.Workday
 dotnet add package Novolis.Time.Worktime
 ```
 
-`Novolis.Time.Calendar` is pulled in by the public-holiday and worktime packages. Add `Novolis.Time.Week` for ISO weeks, and `Novolis.Time.Worktime.Legal` only when a product needs the draft presets.
+Add `Novolis.Time.Week` for week-based calendars, and `Novolis.Time.Worktime.Legal` only when a product needs the draft presets.
 
 ## Clock interval
 
@@ -27,24 +27,27 @@ var overlap = core.OverlapDuration(new ClockInterval(new TimeOnly(8, 0), new Tim
 
 An interval must end after it starts on the same local day. Overnight ranges are rejected.
 
-## Public-holiday workdays
+## Workdays
 
 ```csharp
-using Novolis.Time.Calendar;
-using Novolis.Time.Calendar.PublicHoliday;
+using Novolis.Time.Workday;
 
-var calendar = new PublicHolidayWorkdayCalendar("no-workdays", "NO");
+var calendar = WorkdayCalendar.FromGeneratedHolidays("no-workdays-2026", "NO", 2026);
 var constitutionDay = calendar.IsWorkday(new DateOnly(2026, 5, 17));
 var due = BusinessDayCalculator.AddBusinessDays(new DateOnly(2026, 5, 15), 1, calendar);
 ```
 
-`PublicHolidayWorkdayCalendar` fills a year from the bundled PublicHoliday data set the first time a date in that year is asked. `PublicHolidayWorkdayCalendarFactory.Create` freezes one year into a `WorkdayCalendar` instead.
+Public holidays are frozen facts embedded in `Novolis.Time.Workday`. Regenerate them with:
+
+```powershell
+dotnet run --project d:\novolis\novolis-time\tools\GeneratePublicHolidays\GeneratePublicHolidays.csproj -- d:\novolis\novolis-time\src\Novolis.Time.Workday\GeneratedHolidays.json
+```
 
 ## Expected versus actual
 
 ```csharp
 using Novolis.Time;
-using Novolis.Time.Calendar.PublicHoliday;
+using Novolis.Time.Workday;
 using Novolis.Time.Worktime;
 
 var profile = new WorktimeProfile(
@@ -63,13 +66,13 @@ var template = new ExpectedDayTemplate(
 var settings = new EmploymentSettings(
     "employee-1",
     profile,
-    PublicHolidayWorkdayCalendarFactory.Create("no-workdays-2026", 2026, "NO"),
+    WorkdayCalendar.FromGeneratedHolidays("no-workdays-2026", "NO", 2026),
     template,
     1m);
 var expected = WorktimeCalculator.CreateExpectedSnapshot(new DateOnly(2026, 10, 1), settings);
 ```
 
-`settings` freezes the profile, template, calendar, and employment fraction used for that day.
+`settings` freezes the profile, template, workday calendar, and employment fraction used for that day.
 
 ## Build and test
 

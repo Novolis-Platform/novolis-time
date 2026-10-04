@@ -7,29 +7,30 @@
 ```text
 Novolis.Time
     ├── Novolis.Time.Week
-    └── Novolis.Time.Calendar
-            ├── Novolis.Time.Calendar.PublicHoliday   (PublicHoliday data set)
+    └── Novolis.Time.Workday
             └── Novolis.Time.Worktime
                     └── Novolis.Time.Worktime.Legal
 ```
+
+Holiday generation is a private tool (`tools/GeneratePublicHolidays`). It may reference the third-party `PublicHoliday` package. Runtime assemblies consume only the frozen catalog embedded in `Novolis.Time.Workday`.
 
 ## Packages
 
 | Package | Role |
 | --- | --- |
 | `Novolis.Time` | `ClockInterval`: same-day local ranges, duration, containment, and overlap |
-| `Novolis.Time.Week` | `IsoWeek`: Monday-through-Sunday boundaries |
-| `Novolis.Time.Calendar` | `IWorkdayCalendar`, `WorkdayCalendar`, `BusinessDayCalculator` |
-| `Novolis.Time.Calendar.PublicHoliday` | Offline country calendars from the PublicHoliday package |
+| `Novolis.Time.Week` | `WeekModel`, `WeekKey`, `WeekRange`, `WeeklyPattern<T>`, `WeekCycle<T>`, `WeekBasedCalendar<T>` |
+| `Novolis.Time.Workday` | `IWorkdayCalendar`, `WorkdayCalendar`, `BusinessDayCalculator`, frozen public-holiday facts |
 | `Novolis.Time.Worktime` | Expected snapshots, actual records, day balance, and flex normalization |
 | `Novolis.Time.Worktime.Legal` | Versioned rule messages and starter presets that remain draft until a local review |
 
-Public-holiday types stay inside `Novolis.Time.Calendar.PublicHoliday`. Calendar and worktime public APIs see only `IWorkdayCalendar`.
+Workday and worktime public APIs see only `IWorkdayCalendar`. They are not a general calendar.
 
 ## Goals
 
 - Immutable values a product can store and explain later
-- Calendar decisions that keep source metadata (data set, version, country)
+- Workday decisions that keep source metadata (data set, version, country)
+- Week-based schedules whose missing days are silence, not a reset
 - Worktime math that separates expected time, actual time, flex, and financial-compensation duration
 - Legal presets that stay in `LegalReviewState.Draft` until the adopting organisation marks them reviewed
 
@@ -37,9 +38,10 @@ Public-holiday types stay inside `Novolis.Time.Calendar.PublicHoliday`. Calendar
 
 - Money, payroll, tax, or leave balances
 - Overnight clock intervals
-- Calling a holiday web service
+- Calling a holiday web service or the third-party holiday library at runtime
 - Treating a draft legal preset as permission to enforce a rule
 - UI, storage, or Avalonia types
+- Hours `DayShape` stacking (that stays in Novolis Hours)
 
 ## Consumers
 

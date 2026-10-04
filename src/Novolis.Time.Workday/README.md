@@ -4,14 +4,18 @@
 [Novolis](https://github.com/Novolis-Platform) · [Docs](https://novolis-platform.github.io/.github/novolis-time/) · [Source](https://github.com/Novolis-Platform/novolis-time)
 <!-- novolis-pkg-brand:end -->
 
-# Novolis.Time.Calendar
+# Novolis.Time.Workday
 
-Immutable workday calendars and business-day arithmetic. A calendar answers whether a date is a workday and why a non-workday is excluded, and it keeps source metadata so an application can retain the calendar version behind a decision.
+Immutable workday calendars and business-day arithmetic. A workday calendar answers whether a date is a workday and why a non-workday is excluded, and it keeps source metadata so an application can retain the calendar version behind a decision.
+
+This is not a general calendar API. It does not own weekly patterns, Hours `DayShape` stacking, pay, or leave.
+
+Public holidays come from frozen generated facts embedded in this package. Runtime code does not call the third-party holiday library.
 
 ## Install
 
 ```bash
-dotnet add package Novolis.Time.Calendar
+dotnet add package Novolis.Time.Workday
 ```
 
 Requires .NET 10 (`net10.0`) and `Novolis.Time`. Restore from nuget.org + GitHub Packages (`https://nuget.pkg.github.com/Novolis-Platform/index.json`).
@@ -19,24 +23,24 @@ Requires .NET 10 (`net10.0`) and `Novolis.Time`. Restore from nuget.org + GitHub
 ## Quick start
 
 ```csharp
-using Novolis.Time.Calendar;
+using Novolis.Time.Workday;
 
-var calendar = new WorkdayCalendar(
-    "weekdays",
-    new CalendarSourceMetadata("local", "1", "NO", null),
-    [DayOfWeek.Monday, DayOfWeek.Tuesday, DayOfWeek.Wednesday, DayOfWeek.Thursday, DayOfWeek.Friday],
-    []);
+var calendar = WorkdayCalendar.FromGeneratedHolidays("no-workdays-2026", "NO", 2026);
 var due = BusinessDayCalculator.AddBusinessDays(new DateOnly(2026, 10, 1), 5, calendar);
 ```
 
-Public holidays override the weekday pattern. This package does not load holiday data.
+Regenerate the embedded catalog from the repository root of novolis-time:
+
+```powershell
+dotnet run --project d:\novolis\novolis-time\tools\GeneratePublicHolidays\GeneratePublicHolidays.csproj
+```
 
 ## Related packages
 
 | Package | When to use |
 |---------|-------------|
-| `Novolis.Time.Calendar.PublicHoliday` | Build calendars from the offline PublicHoliday data set |
-| `Novolis.Time.Worktime` | Apply a calendar to expected worktime |
+| `Novolis.Time.Week` | Week identity, weekly patterns, and rotating cycles |
+| `Novolis.Time.Worktime` | Apply a workday calendar to expected worktime |
 | `Novolis.Time` | Clock intervals inside a workday |
 
 ## More documentation

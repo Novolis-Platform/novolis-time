@@ -32,7 +32,7 @@ A draft preset can explain a rule. It is not an approval to apply that rule in p
 | Package | When to use |
 |---------|-------------|
 | `Novolis.Time.Worktime` | Record expected and actual time before any legal message |
-| `Novolis.Time.Calendar.PublicHoliday` | The calendar those records are classified against |
+| `Novolis.Time.Workday` | The workday calendar those records are classified against |
 
 ## More documentation
 

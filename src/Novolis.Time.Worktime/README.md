@@ -14,7 +14,7 @@ Expected versus actual worktime, and flex normalization. Profiles, templates, em
 dotnet add package Novolis.Time.Worktime
 ```
 
-Requires .NET 10 (`net10.0`), `Novolis.Time`, and `Novolis.Time.Calendar`. Restore from nuget.org + GitHub Packages (`https://nuget.pkg.github.com/Novolis-Platform/index.json`).
+Requires .NET 10 (`net10.0`), `Novolis.Time`, and `Novolis.Time.Workday`. Restore from nuget.org + GitHub Packages (`https://nuget.pkg.github.com/Novolis-Platform/index.json`).
 
 ## Quick start
 
@@ -31,8 +31,7 @@ var balance = WorktimeCalculator.Calculate(record, expected);
 
 | Package | When to use |
 |---------|-------------|
-| `Novolis.Time.Calendar` | Supply the `IWorkdayCalendar` |
-| `Novolis.Time.Calendar.PublicHoliday` | Build that calendar from offline holidays |
+| `Novolis.Time.Workday` | Supply the `IWorkdayCalendar` |
 | `Novolis.Time.Worktime.Legal` | Attach draft legal messages to a recorded day |
 
 ## More documentation

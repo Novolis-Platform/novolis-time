@@ -1,5 +1,5 @@
 using Novolis.Time;
-using Novolis.Time.Calendar;
+using Novolis.Time.Workday;
 
 namespace Novolis.Time.Worktime;
 

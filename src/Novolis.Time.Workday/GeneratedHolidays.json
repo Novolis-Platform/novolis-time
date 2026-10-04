@@ -1,0 +1,1719 @@
+{
+  "sourcePackage": "PublicHoliday",
+  "sourcePackageVersion": "3.16.0.0",
+  "generatorVersion": "novolis-time-holiday-generator-1",
+  "countries": {
+    "NO": {
+      "2021": [
+        {
+          "date": "2021-01-01",
+          "name": "F\u00F8rste nytt\u00E5rsdag"
+        },
+        {
+          "date": "2021-04-01",
+          "name": "Skj\u00E6rtorsdag"
+        },
+        {
+          "date": "2021-04-02",
+          "name": "Langfredag"
+        },
+        {
+          "date": "2021-04-04",
+          "name": "F\u00F8rste p\u00E5skedag"
+        },
+        {
+          "date": "2021-04-05",
+          "name": "Andre p\u00E5skedag"
+        },
+        {
+          "date": "2021-05-01",
+          "name": "F\u00F8rste mai"
+        },
+        {
+          "date": "2021-05-13",
+          "name": "Kristi himmelfartsdag"
+        },
+        {
+          "date": "2021-05-17",
+          "name": "Grunnlovsdagen"
+        },
+        {
+          "date": "2021-05-23",
+          "name": "F\u00F8rste pinsedag"
+        },
+        {
+          "date": "2021-05-24",
+          "name": "Andre pinsedag"
+        },
+        {
+          "date": "2021-12-25",
+          "name": "F\u00F8rste juledag"
+        },
+        {
+          "date": "2021-12-26",
+          "name": "Andre juledag"
+        }
+      ],
+      "2022": [
+        {
+          "date": "2022-01-01",
+          "name": "F\u00F8rste nytt\u00E5rsdag"
+        },
+        {
+          "date": "2022-04-14",
+          "name": "Skj\u00E6rtorsdag"
+        },
+        {
+          "date": "2022-04-15",
+          "name": "Langfredag"
+        },
+        {
+          "date": "2022-04-17",
+          "name": "F\u00F8rste p\u00E5skedag"
+        },
+        {
+          "date": "2022-04-18",
+          "name": "Andre p\u00E5skedag"
+        },
+        {
+          "date": "2022-05-01",
+          "name": "F\u00F8rste mai"
+        },
+        {
+          "date": "2022-05-17",
+          "name": "Grunnlovsdagen"
+        },
+        {
+          "date": "2022-05-26",
+          "name": "Kristi himmelfartsdag"
+        },
+        {
+          "date": "2022-06-05",
+          "name": "F\u00F8rste pinsedag"
+        },
+        {
+          "date": "2022-06-06",
+          "name": "Andre pinsedag"
+        },
+        {
+          "date": "2022-12-25",
+          "name": "F\u00F8rste juledag"
+        },
+        {
+          "date": "2022-12-26",
+          "name": "Andre juledag"
+        }
+      ],
+      "2023": [
+        {
+          "date": "2023-01-01",
+          "name": "F\u00F8rste nytt\u00E5rsdag"
+        },
+        {
+          "date": "2023-04-06",
+          "name": "Skj\u00E6rtorsdag"
+        },
+        {
+          "date": "2023-04-07",
+          "name": "Langfredag"
+        },
+        {
+          "date": "2023-04-09",
+          "name": "F\u00F8rste p\u00E5skedag"
+        },
+        {
+          "date": "2023-04-10",
+          "name": "Andre p\u00E5skedag"
+        },
+        {
+          "date": "2023-05-01",
+          "name": "F\u00F8rste mai"
+        },
+        {
+          "date": "2023-05-17",
+          "name": "Grunnlovsdagen"
+        },
+        {
+          "date": "2023-05-18",
+          "name": "Kristi himmelfartsdag"
+        },
+        {
+          "date": "2023-05-28",
+          "name": "F\u00F8rste pinsedag"
+        },
+        {
+          "date": "2023-05-29",
+          "name": "Andre pinsedag"
+        },
+        {
+          "date": "2023-12-25",
+          "name": "F\u00F8rste juledag"
+        },
+        {
+          "date": "2023-12-26",
+          "name": "Andre juledag"
+        }
+      ],
+      "2024": [
+        {
+          "date": "2024-01-01",
+          "name": "F\u00F8rste nytt\u00E5rsdag"
+        },
+        {
+          "date": "2024-03-28",
+          "name": "Skj\u00E6rtorsdag"
+        },
+        {
+          "date": "2024-03-29",
+          "name": "Langfredag"
+        },
+        {
+          "date": "2024-03-31",
+          "name": "F\u00F8rste p\u00E5skedag"
+        },
+        {
+          "date": "2024-04-01",
+          "name": "Andre p\u00E5skedag"
+        },
+        {
+          "date": "2024-05-01",
+          "name": "F\u00F8rste mai"
+        },
+        {
+          "date": "2024-05-09",
+          "name": "Kristi himmelfartsdag"
+        },
+        {
+          "date": "2024-05-17",
+          "name": "Grunnlovsdagen"
+        },
+        {
+          "date": "2024-05-19",
+          "name": "F\u00F8rste pinsedag"
+        },
+        {
+          "date": "2024-05-20",
+          "name": "Andre pinsedag"
+        },
+        {
+          "date": "2024-12-25",
+          "name": "F\u00F8rste juledag"
+        },
+        {
+          "date": "2024-12-26",
+          "name": "Andre juledag"
+        }
+      ],
+      "2025": [
+        {
+          "date": "2025-01-01",
+          "name": "F\u00F8rste nytt\u00E5rsdag"
+        },
+        {
+          "date": "2025-04-17",
+          "name": "Skj\u00E6rtorsdag"
+        },
+        {
+          "date": "2025-04-18",
+          "name": "Langfredag"
+        },
+        {
+          "date": "2025-04-20",
+          "name": "F\u00F8rste p\u00E5skedag"
+        },
+        {
+          "date": "2025-04-21",
+          "name": "Andre p\u00E5skedag"
+        },
+        {
+          "date": "2025-05-01",
+          "name": "F\u00F8rste mai"
+        },
+        {
+          "date": "2025-05-17",
+          "name": "Grunnlovsdagen"
+        },
+        {
+          "date": "2025-05-29",
+          "name": "Kristi himmelfartsdag"
+        },
+        {
+          "date": "2025-06-08",
+          "name": "F\u00F8rste pinsedag"
+        },
+        {
+          "date": "2025-06-09",
+          "name": "Andre pinsedag"
+        },
+        {
+          "date": "2025-12-25",
+          "name": "F\u00F8rste juledag"
+        },
+        {
+          "date": "2025-12-26",
+          "name": "Andre juledag"
+        }
+      ],
+      "2026": [
+        {
+          "date": "2026-01-01",
+          "name": "F\u00F8rste nytt\u00E5rsdag"
+        },
+        {
+          "date": "2026-04-02",
+          "name": "Skj\u00E6rtorsdag"
+        },
+        {
+          "date": "2026-04-03",
+          "name": "Langfredag"
+        },
+        {
+          "date": "2026-04-05",
+          "name": "F\u00F8rste p\u00E5skedag"
+        },
+        {
+          "date": "2026-04-06",
+          "name": "Andre p\u00E5skedag"
+        },
+        {
+          "date": "2026-05-01",
+          "name": "F\u00F8rste mai"
+        },
+        {
+          "date": "2026-05-14",
+          "name": "Kristi himmelfartsdag"
+        },
+        {
+          "date": "2026-05-17",
+          "name": "Grunnlovsdagen"
+        },
+        {
+          "date": "2026-05-24",
+          "name": "F\u00F8rste pinsedag"
+        },
+        {
+          "date": "2026-05-25",
+          "name": "Andre pinsedag"
+        },
+        {
+          "date": "2026-12-25",
+          "name": "F\u00F8rste juledag"
+        },
+        {
+          "date": "2026-12-26",
+          "name": "Andre juledag"
+        }
+      ]
+    },
+    "BE": {
+      "2021": [
+        {
+          "date": "2021-01-01",
+          "name": "Nieuwjaar"
+        },
+        {
+          "date": "2021-04-05",
+          "name": "Paasmaandag"
+        },
+        {
+          "date": "2021-05-01",
+          "name": "Dag van de arbeid"
+        },
+        {
+          "date": "2021-05-13",
+          "name": "Hemelvaartsdag"
+        },
+        {
+          "date": "2021-05-24",
+          "name": "Pinkstermaandag"
+        },
+        {
+          "date": "2021-07-21",
+          "name": "Nationale feestdag"
+        },
+        {
+          "date": "2021-08-15",
+          "name": "Onze Lieve Vrouw hemelvaart"
+        },
+        {
+          "date": "2021-11-01",
+          "name": "Allerheiligen"
+        },
+        {
+          "date": "2021-11-11",
+          "name": "Wapenstilstand"
+        },
+        {
+          "date": "2021-12-25",
+          "name": "Kerstmis"
+        }
+      ],
+      "2022": [
+        {
+          "date": "2022-01-01",
+          "name": "Nieuwjaar"
+        },
+        {
+          "date": "2022-04-18",
+          "name": "Paasmaandag"
+        },
+        {
+          "date": "2022-05-01",
+          "name": "Dag van de arbeid"
+        },
+        {
+          "date": "2022-05-26",
+          "name": "Hemelvaartsdag"
+        },
+        {
+          "date": "2022-06-06",
+          "name": "Pinkstermaandag"
+        },
+        {
+          "date": "2022-07-21",
+          "name": "Nationale feestdag"
+        },
+        {
+          "date": "2022-08-15",
+          "name": "Onze Lieve Vrouw hemelvaart"
+        },
+        {
+          "date": "2022-11-01",
+          "name": "Allerheiligen"
+        },
+        {
+          "date": "2022-11-11",
+          "name": "Wapenstilstand"
+        },
+        {
+          "date": "2022-12-25",
+          "name": "Kerstmis"
+        }
+      ],
+      "2023": [
+        {
+          "date": "2023-01-01",
+          "name": "Nieuwjaar"
+        },
+        {
+          "date": "2023-04-10",
+          "name": "Paasmaandag"
+        },
+        {
+          "date": "2023-05-01",
+          "name": "Dag van de arbeid"
+        },
+        {
+          "date": "2023-05-18",
+          "name": "Hemelvaartsdag"
+        },
+        {
+          "date": "2023-05-29",
+          "name": "Pinkstermaandag"
+        },
+        {
+          "date": "2023-07-21",
+          "name": "Nationale feestdag"
+        },
+        {
+          "date": "2023-08-15",
+          "name": "Onze Lieve Vrouw hemelvaart"
+        },
+        {
+          "date": "2023-11-01",
+          "name": "Allerheiligen"
+        },
+        {
+          "date": "2023-11-11",
+          "name": "Wapenstilstand"
+        },
+        {
+          "date": "2023-12-25",
+          "name": "Kerstmis"
+        }
+      ],
+      "2024": [
+        {
+          "date": "2024-01-01",
+          "name": "Nieuwjaar"
+        },
+        {
+          "date": "2024-04-01",
+          "name": "Paasmaandag"
+        },
+        {
+          "date": "2024-05-01",
+          "name": "Dag van de arbeid"
+        },
+        {
+          "date": "2024-05-09",
+          "name": "Hemelvaartsdag"
+        },
+        {
+          "date": "2024-05-20",
+          "name": "Pinkstermaandag"
+        },
+        {
+          "date": "2024-07-21",
+          "name": "Nationale feestdag"
+        },
+        {
+          "date": "2024-08-15",
+          "name": "Onze Lieve Vrouw hemelvaart"
+        },
+        {
+          "date": "2024-11-01",
+          "name": "Allerheiligen"
+        },
+        {
+          "date": "2024-11-11",
+          "name": "Wapenstilstand"
+        },
+        {
+          "date": "2024-12-25",
+          "name": "Kerstmis"
+        }
+      ],
+      "2025": [
+        {
+          "date": "2025-01-01",
+          "name": "Nieuwjaar"
+        },
+        {
+          "date": "2025-04-21",
+          "name": "Paasmaandag"
+        },
+        {
+          "date": "2025-05-01",
+          "name": "Dag van de arbeid"
+        },
+        {
+          "date": "2025-05-29",
+          "name": "Hemelvaartsdag"
+        },
+        {
+          "date": "2025-06-09",
+          "name": "Pinkstermaandag"
+        },
+        {
+          "date": "2025-07-21",
+          "name": "Nationale feestdag"
+        },
+        {
+          "date": "2025-08-15",
+          "name": "Onze Lieve Vrouw hemelvaart"
+        },
+        {
+          "date": "2025-11-01",
+          "name": "Allerheiligen"
+        },
+        {
+          "date": "2025-11-11",
+          "name": "Wapenstilstand"
+        },
+        {
+          "date": "2025-12-25",
+          "name": "Kerstmis"
+        }
+      ],
+      "2026": [
+        {
+          "date": "2026-01-01",
+          "name": "Nieuwjaar"
+        },
+        {
+          "date": "2026-04-06",
+          "name": "Paasmaandag"
+        },
+        {
+          "date": "2026-05-01",
+          "name": "Dag van de arbeid"
+        },
+        {
+          "date": "2026-05-14",
+          "name": "Hemelvaartsdag"
+        },
+        {
+          "date": "2026-05-25",
+          "name": "Pinkstermaandag"
+        },
+        {
+          "date": "2026-07-21",
+          "name": "Nationale feestdag"
+        },
+        {
+          "date": "2026-08-15",
+          "name": "Onze Lieve Vrouw hemelvaart"
+        },
+        {
+          "date": "2026-11-01",
+          "name": "Allerheiligen"
+        },
+        {
+          "date": "2026-11-11",
+          "name": "Wapenstilstand"
+        },
+        {
+          "date": "2026-12-25",
+          "name": "Kerstmis"
+        }
+      ]
+    },
+    "GB": {
+      "2021": [
+        {
+          "date": "2021-01-01",
+          "name": "New Year"
+        },
+        {
+          "date": "2021-04-02",
+          "name": "Good Friday"
+        },
+        {
+          "date": "2021-04-05",
+          "name": "Easter Monday"
+        },
+        {
+          "date": "2021-05-03",
+          "name": "Early May"
+        },
+        {
+          "date": "2021-05-31",
+          "name": "Spring"
+        },
+        {
+          "date": "2021-08-30",
+          "name": "Summer"
+        },
+        {
+          "date": "2021-12-27",
+          "name": "Christmas"
+        },
+        {
+          "date": "2021-12-28",
+          "name": "Boxing Day"
+        }
+      ],
+      "2022": [
+        {
+          "date": "2022-01-03",
+          "name": "New Year"
+        },
+        {
+          "date": "2022-04-15",
+          "name": "Good Friday"
+        },
+        {
+          "date": "2022-04-18",
+          "name": "Easter Monday"
+        },
+        {
+          "date": "2022-05-02",
+          "name": "Early May"
+        },
+        {
+          "date": "2022-06-02",
+          "name": "Spring"
+        },
+        {
+          "date": "2022-06-03",
+          "name": "Queen\u0027s Platinum Jubilee"
+        },
+        {
+          "date": "2022-08-29",
+          "name": "Summer"
+        },
+        {
+          "date": "2022-09-19",
+          "name": "State Funeral of Queen Elizabeth II"
+        },
+        {
+          "date": "2022-12-26",
+          "name": "Boxing Day"
+        },
+        {
+          "date": "2022-12-27",
+          "name": "Christmas"
+        }
+      ],
+      "2023": [
+        {
+          "date": "2023-01-02",
+          "name": "New Year"
+        },
+        {
+          "date": "2023-04-07",
+          "name": "Good Friday"
+        },
+        {
+          "date": "2023-04-10",
+          "name": "Easter Monday"
+        },
+        {
+          "date": "2023-05-01",
+          "name": "Early May"
+        },
+        {
+          "date": "2023-05-08",
+          "name": "Coronation of King Charles III"
+        },
+        {
+          "date": "2023-05-29",
+          "name": "Spring"
+        },
+        {
+          "date": "2023-08-28",
+          "name": "Summer"
+        },
+        {
+          "date": "2023-12-25",
+          "name": "Christmas"
+        },
+        {
+          "date": "2023-12-26",
+          "name": "Boxing Day"
+        }
+      ],
+      "2024": [
+        {
+          "date": "2024-01-01",
+          "name": "New Year"
+        },
+        {
+          "date": "2024-03-29",
+          "name": "Good Friday"
+        },
+        {
+          "date": "2024-04-01",
+          "name": "Easter Monday"
+        },
+        {
+          "date": "2024-05-06",
+          "name": "Early May"
+        },
+        {
+          "date": "2024-05-27",
+          "name": "Spring"
+        },
+        {
+          "date": "2024-08-26",
+          "name": "Summer"
+        },
+        {
+          "date": "2024-12-25",
+          "name": "Christmas"
+        },
+        {
+          "date": "2024-12-26",
+          "name": "Boxing Day"
+        }
+      ],
+      "2025": [
+        {
+          "date": "2025-01-01",
+          "name": "New Year"
+        },
+        {
+          "date": "2025-04-18",
+          "name": "Good Friday"
+        },
+        {
+          "date": "2025-04-21",
+          "name": "Easter Monday"
+        },
+        {
+          "date": "2025-05-05",
+          "name": "Early May"
+        },
+        {
+          "date": "2025-05-26",
+          "name": "Spring"
+        },
+        {
+          "date": "2025-08-25",
+          "name": "Summer"
+        },
+        {
+          "date": "2025-12-25",
+          "name": "Christmas"
+        },
+        {
+          "date": "2025-12-26",
+          "name": "Boxing Day"
+        }
+      ],
+      "2026": [
+        {
+          "date": "2026-01-01",
+          "name": "New Year"
+        },
+        {
+          "date": "2026-04-03",
+          "name": "Good Friday"
+        },
+        {
+          "date": "2026-04-06",
+          "name": "Easter Monday"
+        },
+        {
+          "date": "2026-05-04",
+          "name": "Early May"
+        },
+        {
+          "date": "2026-05-25",
+          "name": "Spring"
+        },
+        {
+          "date": "2026-08-31",
+          "name": "Summer"
+        },
+        {
+          "date": "2026-12-25",
+          "name": "Christmas"
+        },
+        {
+          "date": "2026-12-28",
+          "name": "Boxing Day"
+        }
+      ]
+    },
+    "FR": {
+      "2021": [
+        {
+          "date": "2021-01-01",
+          "name": "Nouvel An"
+        },
+        {
+          "date": "2021-04-05",
+          "name": "Lundi de P\u00E2ques"
+        },
+        {
+          "date": "2021-05-01",
+          "name": "F\u00EAte du Travail"
+        },
+        {
+          "date": "2021-05-08",
+          "name": "F\u00EAte de la Victoire"
+        },
+        {
+          "date": "2021-05-13",
+          "name": "Jeudi de l\u0027Ascension"
+        },
+        {
+          "date": "2021-05-24",
+          "name": "Lundi de Pentec\u00F4te"
+        },
+        {
+          "date": "2021-07-14",
+          "name": "F\u00EAte nationale"
+        },
+        {
+          "date": "2021-08-15",
+          "name": "Assomption"
+        },
+        {
+          "date": "2021-11-01",
+          "name": "Toussaint"
+        },
+        {
+          "date": "2021-11-11",
+          "name": "Jour de l\u0027armistice"
+        },
+        {
+          "date": "2021-12-25",
+          "name": "No\u00EBl"
+        }
+      ],
+      "2022": [
+        {
+          "date": "2022-01-01",
+          "name": "Nouvel An"
+        },
+        {
+          "date": "2022-04-18",
+          "name": "Lundi de P\u00E2ques"
+        },
+        {
+          "date": "2022-05-01",
+          "name": "F\u00EAte du Travail"
+        },
+        {
+          "date": "2022-05-08",
+          "name": "F\u00EAte de la Victoire"
+        },
+        {
+          "date": "2022-05-26",
+          "name": "Jeudi de l\u0027Ascension"
+        },
+        {
+          "date": "2022-06-06",
+          "name": "Lundi de Pentec\u00F4te"
+        },
+        {
+          "date": "2022-07-14",
+          "name": "F\u00EAte nationale"
+        },
+        {
+          "date": "2022-08-15",
+          "name": "Assomption"
+        },
+        {
+          "date": "2022-11-01",
+          "name": "Toussaint"
+        },
+        {
+          "date": "2022-11-11",
+          "name": "Jour de l\u0027armistice"
+        },
+        {
+          "date": "2022-12-25",
+          "name": "No\u00EBl"
+        }
+      ],
+      "2023": [
+        {
+          "date": "2023-01-01",
+          "name": "Nouvel An"
+        },
+        {
+          "date": "2023-04-10",
+          "name": "Lundi de P\u00E2ques"
+        },
+        {
+          "date": "2023-05-01",
+          "name": "F\u00EAte du Travail"
+        },
+        {
+          "date": "2023-05-08",
+          "name": "F\u00EAte de la Victoire"
+        },
+        {
+          "date": "2023-05-18",
+          "name": "Jeudi de l\u0027Ascension"
+        },
+        {
+          "date": "2023-05-29",
+          "name": "Lundi de Pentec\u00F4te"
+        },
+        {
+          "date": "2023-07-14",
+          "name": "F\u00EAte nationale"
+        },
+        {
+          "date": "2023-08-15",
+          "name": "Assomption"
+        },
+        {
+          "date": "2023-11-01",
+          "name": "Toussaint"
+        },
+        {
+          "date": "2023-11-11",
+          "name": "Jour de l\u0027armistice"
+        },
+        {
+          "date": "2023-12-25",
+          "name": "No\u00EBl"
+        }
+      ],
+      "2024": [
+        {
+          "date": "2024-01-01",
+          "name": "Nouvel An"
+        },
+        {
+          "date": "2024-04-01",
+          "name": "Lundi de P\u00E2ques"
+        },
+        {
+          "date": "2024-05-01",
+          "name": "F\u00EAte du Travail"
+        },
+        {
+          "date": "2024-05-08",
+          "name": "F\u00EAte de la Victoire"
+        },
+        {
+          "date": "2024-05-09",
+          "name": "Jeudi de l\u0027Ascension"
+        },
+        {
+          "date": "2024-05-20",
+          "name": "Lundi de Pentec\u00F4te"
+        },
+        {
+          "date": "2024-07-14",
+          "name": "F\u00EAte nationale"
+        },
+        {
+          "date": "2024-08-15",
+          "name": "Assomption"
+        },
+        {
+          "date": "2024-11-01",
+          "name": "Toussaint"
+        },
+        {
+          "date": "2024-11-11",
+          "name": "Jour de l\u0027armistice"
+        },
+        {
+          "date": "2024-12-25",
+          "name": "No\u00EBl"
+        }
+      ],
+      "2025": [
+        {
+          "date": "2025-01-01",
+          "name": "Nouvel An"
+        },
+        {
+          "date": "2025-04-21",
+          "name": "Lundi de P\u00E2ques"
+        },
+        {
+          "date": "2025-05-01",
+          "name": "F\u00EAte du Travail"
+        },
+        {
+          "date": "2025-05-08",
+          "name": "F\u00EAte de la Victoire"
+        },
+        {
+          "date": "2025-05-29",
+          "name": "Jeudi de l\u0027Ascension"
+        },
+        {
+          "date": "2025-06-09",
+          "name": "Lundi de Pentec\u00F4te"
+        },
+        {
+          "date": "2025-07-14",
+          "name": "F\u00EAte nationale"
+        },
+        {
+          "date": "2025-08-15",
+          "name": "Assomption"
+        },
+        {
+          "date": "2025-11-01",
+          "name": "Toussaint"
+        },
+        {
+          "date": "2025-11-11",
+          "name": "Jour de l\u0027armistice"
+        },
+        {
+          "date": "2025-12-25",
+          "name": "No\u00EBl"
+        }
+      ],
+      "2026": [
+        {
+          "date": "2026-01-01",
+          "name": "Nouvel An"
+        },
+        {
+          "date": "2026-04-06",
+          "name": "Lundi de P\u00E2ques"
+        },
+        {
+          "date": "2026-05-01",
+          "name": "F\u00EAte du Travail"
+        },
+        {
+          "date": "2026-05-08",
+          "name": "F\u00EAte de la Victoire"
+        },
+        {
+          "date": "2026-05-14",
+          "name": "Jeudi de l\u0027Ascension"
+        },
+        {
+          "date": "2026-05-25",
+          "name": "Lundi de Pentec\u00F4te"
+        },
+        {
+          "date": "2026-07-14",
+          "name": "F\u00EAte nationale"
+        },
+        {
+          "date": "2026-08-15",
+          "name": "Assomption"
+        },
+        {
+          "date": "2026-11-01",
+          "name": "Toussaint"
+        },
+        {
+          "date": "2026-11-11",
+          "name": "Jour de l\u0027armistice"
+        },
+        {
+          "date": "2026-12-25",
+          "name": "No\u00EBl"
+        }
+      ]
+    },
+    "PL": {
+      "2021": [
+        {
+          "date": "2021-01-01",
+          "name": "New Year"
+        },
+        {
+          "date": "2021-01-06",
+          "name": "Epiphany"
+        },
+        {
+          "date": "2021-04-04",
+          "name": "Easter Sunday"
+        },
+        {
+          "date": "2021-04-05",
+          "name": "Easter Monday"
+        },
+        {
+          "date": "2021-05-01",
+          "name": "Labour Day"
+        },
+        {
+          "date": "2021-05-03",
+          "name": "Constitution Day"
+        },
+        {
+          "date": "2021-05-23",
+          "name": "Pentecost"
+        },
+        {
+          "date": "2021-06-03",
+          "name": "Corpus Christi"
+        },
+        {
+          "date": "2021-08-15",
+          "name": "Assumption"
+        },
+        {
+          "date": "2021-11-01",
+          "name": "All Saints"
+        },
+        {
+          "date": "2021-11-11",
+          "name": "Independence Day"
+        },
+        {
+          "date": "2021-12-25",
+          "name": "Christmas"
+        },
+        {
+          "date": "2021-12-26",
+          "name": "St Stephen\u0027s Day"
+        }
+      ],
+      "2022": [
+        {
+          "date": "2022-01-01",
+          "name": "New Year"
+        },
+        {
+          "date": "2022-01-06",
+          "name": "Epiphany"
+        },
+        {
+          "date": "2022-04-17",
+          "name": "Easter Sunday"
+        },
+        {
+          "date": "2022-04-18",
+          "name": "Easter Monday"
+        },
+        {
+          "date": "2022-05-01",
+          "name": "Labour Day"
+        },
+        {
+          "date": "2022-05-03",
+          "name": "Constitution Day"
+        },
+        {
+          "date": "2022-06-05",
+          "name": "Pentecost"
+        },
+        {
+          "date": "2022-06-16",
+          "name": "Corpus Christi"
+        },
+        {
+          "date": "2022-08-15",
+          "name": "Assumption"
+        },
+        {
+          "date": "2022-11-01",
+          "name": "All Saints"
+        },
+        {
+          "date": "2022-11-11",
+          "name": "Independence Day"
+        },
+        {
+          "date": "2022-12-25",
+          "name": "Christmas"
+        },
+        {
+          "date": "2022-12-26",
+          "name": "St Stephen\u0027s Day"
+        }
+      ],
+      "2023": [
+        {
+          "date": "2023-01-01",
+          "name": "New Year"
+        },
+        {
+          "date": "2023-01-06",
+          "name": "Epiphany"
+        },
+        {
+          "date": "2023-04-09",
+          "name": "Easter Sunday"
+        },
+        {
+          "date": "2023-04-10",
+          "name": "Easter Monday"
+        },
+        {
+          "date": "2023-05-01",
+          "name": "Labour Day"
+        },
+        {
+          "date": "2023-05-03",
+          "name": "Constitution Day"
+        },
+        {
+          "date": "2023-05-28",
+          "name": "Pentecost"
+        },
+        {
+          "date": "2023-06-08",
+          "name": "Corpus Christi"
+        },
+        {
+          "date": "2023-08-15",
+          "name": "Assumption"
+        },
+        {
+          "date": "2023-11-01",
+          "name": "All Saints"
+        },
+        {
+          "date": "2023-11-11",
+          "name": "Independence Day"
+        },
+        {
+          "date": "2023-12-25",
+          "name": "Christmas"
+        },
+        {
+          "date": "2023-12-26",
+          "name": "St Stephen\u0027s Day"
+        }
+      ],
+      "2024": [
+        {
+          "date": "2024-01-01",
+          "name": "New Year"
+        },
+        {
+          "date": "2024-01-06",
+          "name": "Epiphany"
+        },
+        {
+          "date": "2024-03-31",
+          "name": "Easter Sunday"
+        },
+        {
+          "date": "2024-04-01",
+          "name": "Easter Monday"
+        },
+        {
+          "date": "2024-05-01",
+          "name": "Labour Day"
+        },
+        {
+          "date": "2024-05-03",
+          "name": "Constitution Day"
+        },
+        {
+          "date": "2024-05-19",
+          "name": "Pentecost"
+        },
+        {
+          "date": "2024-05-30",
+          "name": "Corpus Christi"
+        },
+        {
+          "date": "2024-08-15",
+          "name": "Assumption"
+        },
+        {
+          "date": "2024-11-01",
+          "name": "All Saints"
+        },
+        {
+          "date": "2024-11-11",
+          "name": "Independence Day"
+        },
+        {
+          "date": "2024-12-25",
+          "name": "Christmas"
+        },
+        {
+          "date": "2024-12-26",
+          "name": "St Stephen\u0027s Day"
+        }
+      ],
+      "2025": [
+        {
+          "date": "2025-01-01",
+          "name": "New Year"
+        },
+        {
+          "date": "2025-01-06",
+          "name": "Epiphany"
+        },
+        {
+          "date": "2025-04-20",
+          "name": "Easter Sunday"
+        },
+        {
+          "date": "2025-04-21",
+          "name": "Easter Monday"
+        },
+        {
+          "date": "2025-05-01",
+          "name": "Labour Day"
+        },
+        {
+          "date": "2025-05-03",
+          "name": "Constitution Day"
+        },
+        {
+          "date": "2025-06-08",
+          "name": "Pentecost"
+        },
+        {
+          "date": "2025-06-19",
+          "name": "Corpus Christi"
+        },
+        {
+          "date": "2025-08-15",
+          "name": "Assumption"
+        },
+        {
+          "date": "2025-11-01",
+          "name": "All Saints"
+        },
+        {
+          "date": "2025-11-11",
+          "name": "Independence Day"
+        },
+        {
+          "date": "2025-12-24",
+          "name": "Christmas Eve"
+        },
+        {
+          "date": "2025-12-25",
+          "name": "Christmas"
+        },
+        {
+          "date": "2025-12-26",
+          "name": "St Stephen\u0027s Day"
+        }
+      ],
+      "2026": [
+        {
+          "date": "2026-01-01",
+          "name": "New Year"
+        },
+        {
+          "date": "2026-01-06",
+          "name": "Epiphany"
+        },
+        {
+          "date": "2026-04-05",
+          "name": "Easter Sunday"
+        },
+        {
+          "date": "2026-04-06",
+          "name": "Easter Monday"
+        },
+        {
+          "date": "2026-05-01",
+          "name": "Labour Day"
+        },
+        {
+          "date": "2026-05-03",
+          "name": "Constitution Day"
+        },
+        {
+          "date": "2026-05-24",
+          "name": "Pentecost"
+        },
+        {
+          "date": "2026-06-04",
+          "name": "Corpus Christi"
+        },
+        {
+          "date": "2026-08-15",
+          "name": "Assumption"
+        },
+        {
+          "date": "2026-11-01",
+          "name": "All Saints"
+        },
+        {
+          "date": "2026-11-11",
+          "name": "Independence Day"
+        },
+        {
+          "date": "2026-12-24",
+          "name": "Christmas Eve"
+        },
+        {
+          "date": "2026-12-25",
+          "name": "Christmas"
+        },
+        {
+          "date": "2026-12-26",
+          "name": "St Stephen\u0027s Day"
+        }
+      ]
+    },
+    "FI": {
+      "2021": [
+        {
+          "date": "2021-01-01",
+          "name": "Uudenvuodenp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2021-01-06",
+          "name": "Loppiainen"
+        },
+        {
+          "date": "2021-04-02",
+          "name": "Pitk\u00E4perjantai"
+        },
+        {
+          "date": "2021-04-04",
+          "name": "P\u00E4\u00E4si\u00E4isp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2021-04-05",
+          "name": "2. p\u00E4\u00E4si\u00E4isp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2021-05-01",
+          "name": "Vappu"
+        },
+        {
+          "date": "2021-05-13",
+          "name": "Helatorstai"
+        },
+        {
+          "date": "2021-05-23",
+          "name": "Helluntaip\u00E4iv\u00E4"
+        },
+        {
+          "date": "2021-06-26",
+          "name": "Juhannusp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2021-11-06",
+          "name": "Pyh\u00E4inp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2021-12-06",
+          "name": "Itsen\u00E4isyysp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2021-12-25",
+          "name": "Joulup\u00E4iv\u00E4"
+        },
+        {
+          "date": "2021-12-26",
+          "name": "Tapaninp\u00E4iv\u00E4"
+        }
+      ],
+      "2022": [
+        {
+          "date": "2022-01-01",
+          "name": "Uudenvuodenp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2022-01-06",
+          "name": "Loppiainen"
+        },
+        {
+          "date": "2022-04-15",
+          "name": "Pitk\u00E4perjantai"
+        },
+        {
+          "date": "2022-04-17",
+          "name": "P\u00E4\u00E4si\u00E4isp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2022-04-18",
+          "name": "2. p\u00E4\u00E4si\u00E4isp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2022-05-01",
+          "name": "Vappu"
+        },
+        {
+          "date": "2022-05-26",
+          "name": "Helatorstai"
+        },
+        {
+          "date": "2022-06-05",
+          "name": "Helluntaip\u00E4iv\u00E4"
+        },
+        {
+          "date": "2022-06-25",
+          "name": "Juhannusp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2022-11-05",
+          "name": "Pyh\u00E4inp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2022-12-06",
+          "name": "Itsen\u00E4isyysp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2022-12-25",
+          "name": "Joulup\u00E4iv\u00E4"
+        },
+        {
+          "date": "2022-12-26",
+          "name": "Tapaninp\u00E4iv\u00E4"
+        }
+      ],
+      "2023": [
+        {
+          "date": "2023-01-01",
+          "name": "Uudenvuodenp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2023-01-06",
+          "name": "Loppiainen"
+        },
+        {
+          "date": "2023-04-07",
+          "name": "Pitk\u00E4perjantai"
+        },
+        {
+          "date": "2023-04-09",
+          "name": "P\u00E4\u00E4si\u00E4isp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2023-04-10",
+          "name": "2. p\u00E4\u00E4si\u00E4isp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2023-05-01",
+          "name": "Vappu"
+        },
+        {
+          "date": "2023-05-18",
+          "name": "Helatorstai"
+        },
+        {
+          "date": "2023-05-28",
+          "name": "Helluntaip\u00E4iv\u00E4"
+        },
+        {
+          "date": "2023-06-24",
+          "name": "Juhannusp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2023-11-04",
+          "name": "Pyh\u00E4inp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2023-12-06",
+          "name": "Itsen\u00E4isyysp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2023-12-25",
+          "name": "Joulup\u00E4iv\u00E4"
+        },
+        {
+          "date": "2023-12-26",
+          "name": "Tapaninp\u00E4iv\u00E4"
+        }
+      ],
+      "2024": [
+        {
+          "date": "2024-01-01",
+          "name": "Uudenvuodenp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2024-01-06",
+          "name": "Loppiainen"
+        },
+        {
+          "date": "2024-03-29",
+          "name": "Pitk\u00E4perjantai"
+        },
+        {
+          "date": "2024-03-31",
+          "name": "P\u00E4\u00E4si\u00E4isp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2024-04-01",
+          "name": "2. p\u00E4\u00E4si\u00E4isp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2024-05-01",
+          "name": "Vappu"
+        },
+        {
+          "date": "2024-05-09",
+          "name": "Helatorstai"
+        },
+        {
+          "date": "2024-05-19",
+          "name": "Helluntaip\u00E4iv\u00E4"
+        },
+        {
+          "date": "2024-06-22",
+          "name": "Juhannusp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2024-11-02",
+          "name": "Pyh\u00E4inp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2024-12-06",
+          "name": "Itsen\u00E4isyysp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2024-12-25",
+          "name": "Joulup\u00E4iv\u00E4"
+        },
+        {
+          "date": "2024-12-26",
+          "name": "Tapaninp\u00E4iv\u00E4"
+        }
+      ],
+      "2025": [
+        {
+          "date": "2025-01-01",
+          "name": "Uudenvuodenp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2025-01-06",
+          "name": "Loppiainen"
+        },
+        {
+          "date": "2025-04-18",
+          "name": "Pitk\u00E4perjantai"
+        },
+        {
+          "date": "2025-04-20",
+          "name": "P\u00E4\u00E4si\u00E4isp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2025-04-21",
+          "name": "2. p\u00E4\u00E4si\u00E4isp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2025-05-01",
+          "name": "Vappu"
+        },
+        {
+          "date": "2025-05-29",
+          "name": "Helatorstai"
+        },
+        {
+          "date": "2025-06-08",
+          "name": "Helluntaip\u00E4iv\u00E4"
+        },
+        {
+          "date": "2025-06-21",
+          "name": "Juhannusp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2025-11-01",
+          "name": "Pyh\u00E4inp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2025-12-06",
+          "name": "Itsen\u00E4isyysp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2025-12-25",
+          "name": "Joulup\u00E4iv\u00E4"
+        },
+        {
+          "date": "2025-12-26",
+          "name": "Tapaninp\u00E4iv\u00E4"
+        }
+      ],
+      "2026": [
+        {
+          "date": "2026-01-01",
+          "name": "Uudenvuodenp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2026-01-06",
+          "name": "Loppiainen"
+        },
+        {
+          "date": "2026-04-03",
+          "name": "Pitk\u00E4perjantai"
+        },
+        {
+          "date": "2026-04-05",
+          "name": "P\u00E4\u00E4si\u00E4isp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2026-04-06",
+          "name": "2. p\u00E4\u00E4si\u00E4isp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2026-05-01",
+          "name": "Vappu"
+        },
+        {
+          "date": "2026-05-14",
+          "name": "Helatorstai"
+        },
+        {
+          "date": "2026-05-24",
+          "name": "Helluntaip\u00E4iv\u00E4"
+        },
+        {
+          "date": "2026-06-20",
+          "name": "Juhannusp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2026-10-31",
+          "name": "Pyh\u00E4inp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2026-12-06",
+          "name": "Itsen\u00E4isyysp\u00E4iv\u00E4"
+        },
+        {
+          "date": "2026-12-25",
+          "name": "Joulup\u00E4iv\u00E4"
+        },
+        {
+          "date": "2026-12-26",
+          "name": "Tapaninp\u00E4iv\u00E4"
+        }
+      ]
+    }
+  }
+}

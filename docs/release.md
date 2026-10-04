@@ -27,8 +27,7 @@ dotnet run --file d:\novolis\novolis-governance\scripts\doc-audit.cs -- --repo d
 | --- | --- |
 | `Novolis.Time` | `src/Novolis.Time` |
 | `Novolis.Time.Week` | `src/Novolis.Time.Week` |
-| `Novolis.Time.Calendar` | `src/Novolis.Time.Calendar` |
-| `Novolis.Time.Calendar.PublicHoliday` | `src/Novolis.Time.Calendar.PublicHoliday` |
+| `Novolis.Time.Workday` | `src/Novolis.Time.Workday` |
 | `Novolis.Time.Worktime` | `src/Novolis.Time.Worktime` |
 | `Novolis.Time.Worktime.Legal` | `src/Novolis.Time.Worktime.Legal` |
 

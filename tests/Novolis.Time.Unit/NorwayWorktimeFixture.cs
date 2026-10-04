@@ -1,5 +1,5 @@
 using Novolis.Time;
-using Novolis.Time.Calendar.PublicHoliday;
+using Novolis.Time.Workday;
 using Novolis.Time.Worktime;
 
 namespace Novolis.Time.Unit;
@@ -22,7 +22,7 @@ internal static class NorwayWorktimeFixture
     internal static EmploymentSettings CreateSettings()
     {
         var profile = CreateProfile();
-        var calendar = PublicHolidayWorkdayCalendarFactory.Create("no-workdays-2026", 2026, "NO");
+        var calendar = WorkdayCalendar.FromGeneratedHolidays("no-workdays-2026", "NO", 2026);
         var template = new ExpectedDayTemplate(
             "office-day",
             "Office day",

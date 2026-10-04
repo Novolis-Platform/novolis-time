@@ -1,12 +1,13 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <PackageId>Novolis.Time.Calendar</PackageId>
-    <RootNamespace>Novolis.Time.Calendar</RootNamespace>
+    <PackageId>Novolis.Time.Workday</PackageId>
+    <RootNamespace>Novolis.Time.Workday</RootNamespace>
     <Description>Immutable workday calendars and business-day arithmetic.</Description>
     <IsPackable>true</IsPackable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Novolis.Time\Novolis.Time.csproj" />
+    <EmbeddedResource Include="GeneratedHolidays.json" LogicalName="Novolis.Time.Workday.GeneratedHolidays.json" />
   </ItemGroup>
 </Project>

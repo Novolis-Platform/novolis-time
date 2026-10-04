@@ -6,15 +6,11 @@
     },
     "Novolis.Time.Week": {
       "path": "src/Novolis.Time.Week/Novolis.Time.Week.csproj",
-      "description": "ISO week boundaries"
+      "description": "Week identity and week-based calendars"
     },
-    "Novolis.Time.Calendar": {
-      "path": "src/Novolis.Time.Calendar/Novolis.Time.Calendar.csproj",
+    "Novolis.Time.Workday": {
+      "path": "src/Novolis.Time.Workday/Novolis.Time.Workday.csproj",
       "description": "Workday calendars and business-day arithmetic"
-    },
-    "Novolis.Time.Calendar.PublicHoliday": {
-      "path": "src/Novolis.Time.Calendar.PublicHoliday/Novolis.Time.Calendar.PublicHoliday.csproj",
-      "description": "Offline public-holiday workday calendars"
     },
     "Novolis.Time.Worktime": {
       "path": "src/Novolis.Time.Worktime/Novolis.Time.Worktime.csproj",

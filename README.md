@@ -43,8 +43,7 @@
 |---------|---------|----------------|
 | `Novolis.Time` | `dotnet add package Novolis.Time` | [README](https://github.com/Novolis-Platform/novolis-time/blob/main/src/Novolis.Time/README.md) |
 | `Novolis.Time.Week` | `dotnet add package Novolis.Time.Week` | [README](https://github.com/Novolis-Platform/novolis-time/blob/main/src/Novolis.Time.Week/README.md) |
-| `Novolis.Time.Calendar` | `dotnet add package Novolis.Time.Calendar` | [README](https://github.com/Novolis-Platform/novolis-time/blob/main/src/Novolis.Time.Calendar/README.md) |
-| `Novolis.Time.Calendar.PublicHoliday` | `dotnet add package Novolis.Time.Calendar.PublicHoliday` | [README](https://github.com/Novolis-Platform/novolis-time/blob/main/src/Novolis.Time.Calendar.PublicHoliday/README.md) |
+| `Novolis.Time.Workday` | `dotnet add package Novolis.Time.Workday` | [README](https://github.com/Novolis-Platform/novolis-time/blob/main/src/Novolis.Time.Workday/README.md) |
 | `Novolis.Time.Worktime` | `dotnet add package Novolis.Time.Worktime` | [README](https://github.com/Novolis-Platform/novolis-time/blob/main/src/Novolis.Time.Worktime/README.md) |
 | `Novolis.Time.Worktime.Legal` | `dotnet add package Novolis.Time.Worktime.Legal` | [README](https://github.com/Novolis-Platform/novolis-time/blob/main/src/Novolis.Time.Worktime.Legal/README.md) |
 

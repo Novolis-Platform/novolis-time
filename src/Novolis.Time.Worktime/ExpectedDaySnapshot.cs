@@ -1,5 +1,5 @@
 using Novolis.Time;
-using Novolis.Time.Calendar;
+using Novolis.Time.Workday;
 
 namespace Novolis.Time.Worktime;
 
@@ -13,4 +13,4 @@ public sealed record ExpectedDaySnapshot(
     string ProfileId,
     string TemplateId,
     string CalendarId,
-    CalendarSourceMetadata CalendarSource);
+    WorkdaySourceMetadata CalendarSource);

@@ -8,6 +8,6 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Novolis.Time\Novolis.Time.csproj" />
-    <ProjectReference Include="..\Novolis.Time.Calendar\Novolis.Time.Calendar.csproj" />
+    <ProjectReference Include="..\Novolis.Time.Workday\Novolis.Time.Workday.csproj" />
   </ItemGroup>
 </Project>

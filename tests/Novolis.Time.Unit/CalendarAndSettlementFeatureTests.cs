@@ -1,5 +1,4 @@
-using Novolis.Time.Calendar;
-using Novolis.Time.Calendar.PublicHoliday;
+using Novolis.Time.Workday;
 using Novolis.Time.Worktime;
 using Novolis.Time.Worktime.Legal;
 
@@ -23,7 +22,7 @@ public sealed class CalendarAndSettlementFeatureTests
     [Test]
     public async Task Counts_five_business_days_after_october_2026_closes()
     {
-        var calendar = PublicHolidayWorkdayCalendarFactory.Create("no-workdays-2026", 2026, "NO");
+        var calendar = WorkdayCalendar.FromGeneratedHolidays("no-workdays-2026", "NO", 2026);
         var deadline = BusinessDayCalculator.AddBusinessDays(new DateOnly(2026, 10, 31), 5, calendar);
 
         await Assert.That(deadline).IsEqualTo(new DateOnly(2026, 11, 6));
